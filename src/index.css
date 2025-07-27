@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "neue_montrealbold_italic";
+  src:
+    url("../fonts/neuemontreal-bolditalic-webfont.woff2") format("woff2"),
+    url("../fonts/neuemontreal-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "neue_montrealitalic";
+  src:
+    url("../fonts/neuemontreal-italic-webfont.woff2") format("woff2"),
+    url("../fonts/neuemontreal-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "neue_montreallight_italic";
+  src:
+    url("../fonts/neuemontreal-lightitalic-webfont.woff2") format("woff2"),
+    url("../fonts/neuemontreal-lightitalic-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "neue_montrealmedium_italic";
+  src:
+    url("../fonts/neuemontreal-mediumitalic-webfont.woff2") format("woff2"),
+    url("../fonts/neuemontreal-mediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "neue_montrealbold";
+  src:
+    url("../fonts/neuemontreal-bold-webfont.woff2") format("woff2"),
+    url("../fonts/neuemontreal-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neue_montreallight";
+  src:
+    url("../fonts/neuemontreal-light-webfont.woff2") format("woff2"),
+    url("../fonts/neuemontreal-light-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neue_montrealmedium";
+  src:
+    url("../fonts/neuemontreal-medium-webfont.woff2") format("woff2"),
+    url("../fonts/neuemontreal-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neue_montrealregular";
+  src:
+    url("../fonts/neuemontreal-regular-webfont.woff2") format("woff2"),
+    url("../fonts/neuemontreal-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.neue_montrealbold {
+  font-family: "neue_montrealbold";
+}
+
+.urbanist-semibold {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.zilla-slab-highlight-bold {
+  font-family: "Zilla Slab Highlight", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-stroke {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.div-center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+html,
+body {
+  width: 100%;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* @layer components {
+  nav {
+    @apply fixed z-50 w-full;
+
+    div {
+      @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
+    }
+
+    p {
+      @apply font-modern-negra text-3xl -mb-2;
+    }
+
+    a {
+      @apply cursor-pointer text-nowrap md:text-base text-sm;
+    }
+
+    ul {
+      @apply flex-center lg:gap-12 gap-7;
+    }
+  }
+} */
