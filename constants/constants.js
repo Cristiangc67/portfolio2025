@@ -28,4 +28,6 @@ const projectsList = [
   },
 ];
 
-export { navLinks, projectsList };
+
+
+export { navLinks, projectsList};

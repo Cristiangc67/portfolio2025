@@ -2,30 +2,26 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-const ProjectCarousel = ({ textTitle }) => {
+const TextCarousel = ({ textTitle }) => {
+  const carouselId = textTitle.replace(/ /g, "");
   useGSAP(() => {
-    const timelineProyects = gsap.timeline();
-    gsap.to(`#${textTitle}-carousel`, {
+    gsap.to(`#${carouselId}-carousel`, {
       xPercent: -50,
       duration: 20,
       repeat: -1,
       ease: "none",
     });
-
-    /* timelineProyects.scrollTrigger({
-      trigger:,
-    }) */
-  });
+  }, []);
   return (
     <div
-      id={`${textTitle}-carousel`}
-      className="neue_montrealbold text-7xl flex items-center w-fit gap-4 mt-40"
+      id={`${carouselId}-carousel`}
+      className="neue_montrealbold text-7xl flex items-center  w-fit gap-4"
     >
       {[...Array(2)].map((_, i) => (
         <React.Fragment key={i}>
           {[...Array(8)].map((_, j) => (
             <React.Fragment key={j}>
-              <span>{textTitle}</span>
+              <p className="text-nowrap">{textTitle}</p>
               <div className="h-8 w-8 rounded-full bg-[#D6559F]"></div>
             </React.Fragment>
           ))}
@@ -35,4 +31,4 @@ const ProjectCarousel = ({ textTitle }) => {
   );
 };
 
-export default ProjectCarousel;
+export default TextCarousel;

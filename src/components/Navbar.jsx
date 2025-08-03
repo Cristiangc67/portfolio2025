@@ -1,9 +1,8 @@
 import React, { useRef } from "react";
-import { navLinks } from "../../constants/constants";
+import { navLinks } from "../../constants/constants.js";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { projectsList } from "../../constants/constants";
-
+import { projectsList } from "../../constants/constants.js";
 const Navbar = ({ smoother }) => {
   const proyectosRef = useRef(null);
   useGSAP(() => {
@@ -19,7 +18,6 @@ const Navbar = ({ smoother }) => {
           targets: "#logo",
           className: "text-pink-500",
         },
-        markers: true,
       });
     };
 
@@ -54,7 +52,7 @@ const Navbar = ({ smoother }) => {
             <button
               key={link.id}
               onClick={() => scrollToSection(`#${link.id}`)}
-              className=" bg-[#D6559F] px-3 py-2 rounded-2xl cursor-pointer text-nowrap md:text-base text-sm"
+              className=" bg-pink-500  px-3 py-2 rounded-2xl cursor-pointer text-nowrap md:text-base text-sm"
             >
               {link.title}
             </button>
@@ -66,3 +64,4 @@ const Navbar = ({ smoother }) => {
 };
 
 export default Navbar;
+/* bg-[#D6559F] */

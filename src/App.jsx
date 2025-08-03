@@ -1,4 +1,3 @@
-import { SkillsCarousel } from "./components/SkillsCarousel";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -7,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 
@@ -27,18 +27,15 @@ function App() {
   }, []);
 
   return (
-    <main id="smooth-wrapper" className="w-full  overflow-x-hidden">
+    <main id="smooth-wrapper" className="w-full h-full  overflow-x-hidden">
       <Navbar smoother={smootherRef} />
       <div id="smooth-content">
         <Hero />
         <Projects />
-
         <About />
-
-        <div className="min-h-dvh bg-blue-500"></div>
+        <Contact />
+        {/* <div className=" min-h-dvh"></div> */}
       </div>
-
-      <SkillsCarousel />
     </main>
   );
 }
