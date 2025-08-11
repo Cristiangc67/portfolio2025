@@ -1,6 +1,4 @@
 import React from "react";
-import IconReact from "../assets/skills/react.svg?react";
-import IconMongo from "../assets/skills/MongoDB.svg?react";
 
 const Skill = ({ Icon }) => {
   return (
