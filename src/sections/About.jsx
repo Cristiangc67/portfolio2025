@@ -7,17 +7,17 @@ import { useMediaQuery } from "react-responsive";
 import Skill from "../components/Skill";
 
 import IconMongo from "../assets/skills/MongoDB.svg?react";
-import IconExpress from "../assets/skills/express.svg?react";
+import IconExpress from "../assets/skills/Express.svg?react";
 import IconReact from "../assets/skills/React.svg?react";
 import IconNode from "../assets/skills/NodeJs.svg?react";
-import IconTailwind from "../assets/skills/tailwind.svg?react";
-import IconMySQL from "../assets/skills/mysql.svg?react";
-import IconJs from "../assets/skills/javascript.svg?react";
-import IconBootstrap from "../assets/skills/bootstrap.svg?react";
-import IconHtml from "../assets/skills/html5.svg?react";
-import IconCss from "../assets/skills/css3.svg?react";
-import IconDocker from "../assets/skills/docker.svg?react";
-import IconPython from "../assets/skills/python.svg?react";
+import IconTailwind from "../assets/skills/Tailwind.svg?react";
+import IconMySQL from "../assets/skills/Mysql.svg?react";
+import IconJs from "../assets/skills/Javascript.svg?react";
+import IconBootstrap from "../assets/skills/Bootstrap.svg?react";
+import IconHtml from "../assets/skills/HTML5.svg?react";
+import IconCss from "../assets/skills/CSS3.svg?react";
+import IconDocker from "../assets/skills/Docker.svg?react";
+import IconPython from "../assets/skills/Python.svg?react";
 import IconGit from "../assets/skills/git.svg?react";
 import IconGithub from "../assets/skills/github.svg?react";
 
