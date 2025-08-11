@@ -1,7 +1,6 @@
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import ScrollSmoother from "gsap/ScrollSmoother";
-
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
@@ -13,7 +12,6 @@ import { useRef } from "react";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function App() {
-  const navbarPRef = useRef(null);
   const smootherRef = useRef(null);
   useGSAP(() => {
     const smoother = ScrollSmoother.create({
@@ -34,7 +32,6 @@ function App() {
         <Projects />
         <About />
         <Contact />
-        {/* <div className=" min-h-dvh"></div> */}
       </div>
     </main>
   );

@@ -62,7 +62,7 @@ export default function Projects({}) {
       className=" min-h-dvh w-full py-15"
     >
       <TextCarousel textTitle={"PROYECTOS"} />
-      <div className=" flex flex-col gap-5 lg:hidden px-4">
+      <div className=" flex flex-col gap-5 lg:hidden px-4 pt-10 lg:pt-0">
         {projectsList.map((proj, j) => (
           <ProjectMobile
             key={j}

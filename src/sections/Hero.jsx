@@ -59,28 +59,28 @@ const Hero = () => {
       <img
         id="hero-image"
         src="/images/hero.jpg"
-        className=" w-full md:h-[100%] brightness-[0.85] saturate-[1.2] absolute  md:object-cover object-center object-cover"
+        className=" h-full w-full lg:w-full md:h-[100%] brightness-[0.85] saturate-[1.2] absolute  md:object-cover object-center object-cover"
         alt=""
       />
 
       <div
         id="desarrollos"
-        className="bg-amber-300 w-fit h-fit absolute div-center-absolute text-center"
+        className=" w-fit lg:w-fit h-fit absolute div-center-absolute text-center"
       >
-        <p className="desarollo-stroke neue_montrealbold text-9xl absolute -top-22 -translate-1/2  text-stroke">
+        <p className="desarollo-stroke  neue_montrealbold text-5xl md:text-7xl lg:text-9xl absolute -top-22 lg:-top-22 -translate-1/2  text-stroke">
           DESARROLLO
         </p>
-        <p className="desarollo-stroke neue_montrealbold text-9xl absolute -top-15 -translate-1/2 text-stroke">
+        <p className="desarollo-stroke  neue_montrealbold text-5xl md:text-7xl lg:text-9xl absolute -top-18 lg:-top-15 -translate-1/2 text-stroke">
           DESARROLLO
         </p>
-        <p className="desarollo-stroke neue_montrealbold text-9xl absolute -top-9 -translate-1/2 text-stroke">
+        <p className="desarollo-stroke  neue_montrealbold text-5xl md:text-7xl lg:text-9xl absolute -top-14 lg:-top-9 -translate-1/2 text-stroke">
           DESARROLLO
         </p>
       </div>
 
       <h2
         id="scramble-text"
-        className="absolute text-5xl -translate-1/2 bottom-72 left-1/2 neue_montrealbold "
+        className="absolute text-center text-4xl lg:text-5xl -translate-1/2 bottom-72 left-1/2 neue_montrealbold "
       >
         WEB DEVELOPMENT
       </h2>

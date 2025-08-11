@@ -15,6 +15,7 @@ const projectsList = [
       github: "https://github.com/Cristiangc67/PersonifAI-Front-end",
       web: "https://personif-ai-front-end.vercel.app",
     },
+    type: "pinned",
   },
   {
     id: "personifai2",
@@ -25,9 +26,19 @@ const projectsList = [
       github: "https://github.com/Cristiangc67/PersonifAI-Front-end",
       web: "https://personif-ai-front-end.vercel.app",
     },
+    type: "pinned",
+  },
+  {
+    id: "personifai3",
+    title: "PersonifAI3",
+    description:
+      "3PersonifAI es una librería de personajes diseñada para dotar a las inteligencias artificiales de una historia, personalidad y estilo de respuesta únicos. Cada personaje cuenta con un trasfondo narrativo y una forma particular de expresarse, lo que permite al usuario interactuar no solo con un modelo de IA, sino con una entidad ficticia coherente y envolvente",
+    links: {
+      github: "https://github.com/Cristiangc67/PersonifAI-Front-end",
+      web: "https://personif-ai-front-end.vercel.app",
+    },
+    type: "scroll",
   },
 ];
 
-
-
-export { navLinks, projectsList};
+export { navLinks, projectsList };
