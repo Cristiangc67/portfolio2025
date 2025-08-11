@@ -12,7 +12,7 @@ import IconReact from "../assets/skills/React.svg?react";
 import IconNode from "../assets/skills/NodeJs.svg?react";
 import IconTailwind from "../assets/skills/Tailwind.svg?react";
 import IconMySQL from "../assets/skills/MySQL.svg?react";
-import IconJs from "../assets/skills/Javascript.svg?react";
+import IconJs from "../assets/skills/JavaScript.svg?react";
 import IconBootstrap from "../assets/skills/Bootstrap.svg?react";
 import IconHtml from "../assets/skills/HTML5.svg?react";
 import IconCss from "../assets/skills/CSS3.svg?react";
