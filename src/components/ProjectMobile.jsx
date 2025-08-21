@@ -14,7 +14,7 @@ const ProjectMobile = ({
     <div className="bg-fuchsia-800/20 rounded-2xl flex flex-col border border-fuchsia-600/40 h-full w-full pb-5">
       <img
         id="hero-image"
-        src="/images/personifAI-home.png"
+        src={`/images/${projectId}.png`}
         className="w-full rounded-t-2xl"
         alt=""
       />

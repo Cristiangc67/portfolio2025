@@ -46,11 +46,9 @@ const About = () => {
         const timelineAbout = gsap.timeline({
           scrollTrigger: {
             trigger: "#sobre-mi",
-            start: "top top",
-            end: "+=400", // duración de 1px de scroll (no de tiempo)
-            pin: true,
+            start: "top top+=1",
+
             scrub: false,
-            markers: true,
           },
         });
 
@@ -80,11 +78,11 @@ const About = () => {
             className=" text-sm md:text-base lg:text-lg xl:text-2xl neue_montreal text-balance"
           >
             Soy Técnico Superior en Desarrollo de Software y me especializo en
-            el desarrollo web full stack. Disfruto creando aplicaciones
-            dinámicas y bien diseñadas, combinando lógica, diseño y buenas
-            prácticas. Trabajo con tecnologías modernas tanto del lado del
-            frontend como del backend, y siempre estoy explorando nuevas
-            herramientas para mejorar mis proyectos.
+            el desarrollo Frontend. Disfruto creando aplicaciones dinámicas y
+            bien diseñadas, combinando lógica, diseño y buenas prácticas.
+            Trabajo con tecnologías modernas tanto del lado del frontend como
+            del backend, y siempre estoy explorando nuevas herramientas para
+            mejorar mis proyectos.
           </p>
           <div className="mt-10 ">
             <h3 className="text-2xl lg:text-3xl xl:text-4xl neue_montrealsemibold ">

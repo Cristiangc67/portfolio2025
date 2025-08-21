@@ -14,7 +14,7 @@ export default function Projects({}) {
   const sectionRef = useRef(null);
   const trackRef = useRef(null);
   const scrollTriggerRef = useRef(null);
-  const ismobile = useMediaQuery({ maxWidth: 768 });
+  const ismobile = useMediaQuery({ maxWidth: 1023 });
   useGSAP(() => {
     const section = sectionRef.current;
     const track = trackRef.current;
@@ -45,10 +45,9 @@ export default function Projects({}) {
 
     createAnimation();
 
-    // Resize
     const handleResize = () => {
-      ScrollTrigger.refresh(); // actualiza layout y vuelve a llamar `end`
-      //requestAnimationFrame(createAnimation); // recreate animación
+      ScrollTrigger.refresh();
+
       createAnimation();
     };
 

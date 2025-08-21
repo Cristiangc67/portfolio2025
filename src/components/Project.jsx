@@ -14,7 +14,6 @@ const Project = ({
   const imageOverlayRef = useRef(null);
   useGSAP(() => {
     if (!projectRef.current || !imageOverlayRef.current) return;
-    /* const project = document.querySelector(`#project-${projectId}`); */
     const createAnimation = () => {
       const hover = gsap.fromTo(
         imageOverlayRef.current,
@@ -31,8 +30,6 @@ const Project = ({
     };
     createAnimation();
     const handleResize = () => {
-      //ScrollTrigger.refresh(); // actualiza layout y vuelve a llamar `end`
-      //requestAnimationFrame(createAnimation); // recreate animación
       createAnimation();
     };
     window.addEventListener("resize", handleResize);
@@ -46,8 +43,8 @@ const Project = ({
     >
       <img
         id="hero-image"
-        src="/images/personifAI-home.png"
-        className="h-full w-full  "
+        src={`/images/${projectId}.png`}
+        className="h-full w-full"
         alt=""
       />
       <div
